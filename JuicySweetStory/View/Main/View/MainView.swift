@@ -43,7 +43,7 @@ struct MainView: View {
         }
         switch mainManuElement {
         case .play:
-            nextView = AnyView(ContentView())
+            nextView = AnyView(LevelsView())
         case .gameRules:
             nextView = AnyView(ContentView())
         case .settings:
