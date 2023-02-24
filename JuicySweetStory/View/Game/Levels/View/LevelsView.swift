@@ -19,11 +19,16 @@ struct LevelsView: View {
         ScrollView(showsIndicators: false) {
             LazyVGrid(columns: columns, spacing: 16) {
                 ForEach(0..<levelsStorage.levelCount, id: \.self) { levelIndex in
-                    if let level = levelsStorage.getLevel(levelIndex) {
+                    if let level = levelsStorage.getLevel(levelIndex + 1) {
                         LevelsViewItem(
                             level: level,
                             isOpen: level.number <= levelsStorage.maxLevel
                         )
+                        .onTapGesture {
+                            if level.number <= levelsStorage.maxLevel {
+                                print(1)
+                            }
+                        }
                     }
                 }
             }
