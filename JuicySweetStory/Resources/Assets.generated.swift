@@ -28,10 +28,16 @@ internal enum Asset {
     internal static let accentColor = ColorAsset(name: "AccentColor")
   }
   internal enum Colors {
+    internal static let accentColor = ColorAsset(name: "accentColor")
+    internal static let darkAccentColor = ColorAsset(name: "darkAccentColor")
     internal static let foregroundColor = ColorAsset(name: "foregroundColor")
+    internal static let lightAccentColor = ColorAsset(name: "lightAccentColor")
   }
   internal enum Images {
+    internal static let checkboxOffIcon = ImageAsset(name: "checkboxOffIcon")
+    internal static let checkboxOnIcon = ImageAsset(name: "checkboxOnIcon")
     internal static let backgroundIcon = ImageAsset(name: "backgroundIcon")
+    internal static let candyIcon = ImageAsset(name: "candyIcon")
   }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
