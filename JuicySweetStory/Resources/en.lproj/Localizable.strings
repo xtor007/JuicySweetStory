@@ -15,3 +15,5 @@
 "settings.sound" = "Sound";
 "settings.rateUs" = "Rate us";
 "settings.vibro" = "Vibro";
+
+"levels.title" = "Levels";
