@@ -8,9 +8,36 @@
 import SwiftUI
 
 struct LevelsView: View {
+
+    private let levelsStorage: LevelsStorageProtocol = LevelsStorage()
+
+    private let columns = [
+        GridItem(.adaptive(minimum: 100, maximum: 100), spacing: 16)
+    ]
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView(showsIndicators: false) {
+            LazyVGrid(columns: columns, spacing: 16) {
+                ForEach(0..<levelsStorage.levelCount, id: \.self) { levelIndex in
+                    if let level = levelsStorage.getLevel(levelIndex) {
+                        LevelsViewItem(
+                            level: level,
+                            isOpen: level.number <= levelsStorage.maxLevel
+                        )
+                    }
+                }
+            }
+            .padding(16)
+        }
+        .navigationBarBackButtonHidden(true)
+        .navigationBar(title: Strings.Levels.title)
+        .background {
+            Asset.Images.backgroundIcon.swiftUIImage
+                .resizable()
+                .ignoresSafeArea()
+        }
     }
+
 }
 
 struct LevelsView_Previews: PreviewProvider {

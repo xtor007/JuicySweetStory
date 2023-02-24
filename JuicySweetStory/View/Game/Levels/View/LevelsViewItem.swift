@@ -26,6 +26,7 @@ struct LevelsViewItem: View {
                     .fill(
                         Asset.Colors.shadowColor.swiftUIColor.opacity(0.7)
                     )
+                    .aspectRatio(1, contentMode: .fit)
             }
             Asset.Images.smallCandyFrame.swiftUIImage
                 .resizable()
