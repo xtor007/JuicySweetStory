@@ -1,0 +1,20 @@
+xcassets:
+  - inputs:
+    - JuicySweetStory/Resources
+    outputs:
+      - templateName: swift5
+        output: JuicySweetStory/Resources/Assets.generated.swift
+
+strings:
+  inputs: JuicySweetStory/Resources/en.lproj
+  outputs:
+    - templateName: structured-swift5
+      output: JuicySweetStory/Resources/Strings.generated.swift
+      params:
+        enumName: Strings
+        
+fonts:
+    inputs: JuicySweetStory/Resources/Fonts
+    outputs:
+        templateName: swift5
+        output: JuicySweetStory/Resources/Fonts.generated.swift
