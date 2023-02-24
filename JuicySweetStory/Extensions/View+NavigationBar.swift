@@ -9,6 +9,8 @@ import SwiftUI
 
 struct CustomNavigationBar: ViewModifier {
 
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
     @State var title: String
 
     func body(content: Content) -> some View {
@@ -22,7 +24,7 @@ struct CustomNavigationBar: ViewModifier {
                 .frame(height: 63)
                 HStack {
                     BackButton {
-                        print(1)
+                        presentationMode.wrappedValue.dismiss()
                     }
                     .frame(width: 60)
                     Spacer()
