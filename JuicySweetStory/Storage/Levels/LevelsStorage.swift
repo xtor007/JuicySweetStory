@@ -89,6 +89,10 @@ class LevelsStorage: LevelsStorageProtocol {
         Level(number: 12, resultImage: Asset.Images.level12Global.swiftUIImage, items: [])
     ]
 
+    var levelCount: Int {
+        return levels.count
+    }
+
     func getLevel(_ levelNumber: Int) -> Level? {
         return levels[safe: levelNumber - 1]
     }

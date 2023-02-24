@@ -9,5 +9,6 @@ import Foundation
 
 protocol LevelsStorageProtocol {
     var maxLevel: Int { get set }
-    func getLevel(_ levelNumber: Int) -> Level?
+    var levelCount: Int { get }
+    var getLevel( _ levelNumber: Int) -> Level?
 }
