@@ -32,6 +32,7 @@ internal enum Asset {
     internal static let darkAccentColor = ColorAsset(name: "darkAccentColor")
     internal static let foregroundColor = ColorAsset(name: "foregroundColor")
     internal static let lightAccentColor = ColorAsset(name: "lightAccentColor")
+    internal static let shadowColor = ColorAsset(name: "shadowColor")
   }
   internal enum Images {
     internal static let checkboxOffIcon = ImageAsset(name: "checkboxOffIcon")
@@ -99,6 +100,7 @@ internal enum Asset {
     internal static let level9Global = ImageAsset(name: "level9Global")
     internal static let backButtonIcon = ImageAsset(name: "backButtonIcon")
     internal static let backgroundIcon = ImageAsset(name: "backgroundIcon")
+    internal static let blockCandyIcon = ImageAsset(name: "blockCandyIcon")
     internal static let candyIcon = ImageAsset(name: "candyIcon")
   }
 }

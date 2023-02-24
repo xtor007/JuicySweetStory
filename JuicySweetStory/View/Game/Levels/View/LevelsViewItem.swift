@@ -21,6 +21,12 @@ struct LevelsViewItem: View {
                     RoundedRectangle(cornerRadius: 20)
                 )
                 .padding(5)
+            if !isOpen {
+                RoundedRectangle(cornerRadius: 20)
+                    .fill(
+                        Asset.Colors.shadowColor.swiftUIColor.opacity(0.7)
+                    )
+            }
             Asset.Images.smallCandyFrame.swiftUIImage
                 .resizable()
                 .scaledToFit()
@@ -30,6 +36,12 @@ struct LevelsViewItem: View {
                     Spacer()
                     numberView()
                 }
+            }
+            if !isOpen {
+                Asset.Images.blockCandyIcon.swiftUIImage
+                    .resizable()
+                    .scaledToFit()
+                    .padding(8)
             }
         }
     }
