@@ -23,6 +23,16 @@ internal enum Strings {
     /// Settings
     internal static let settings = Strings.tr("Localizable", "mainMenu.settings", fallback: "Settings")
   }
+  internal enum Settings {
+    /// Rate us
+    internal static let rateUs = Strings.tr("Localizable", "settings.rateUs", fallback: "Rate us")
+    /// Sound
+    internal static let sound = Strings.tr("Localizable", "settings.sound", fallback: "Sound")
+    /// Settings
+    internal static let title = Strings.tr("Localizable", "settings.title", fallback: "Settings")
+    /// Vibro
+    internal static let vibro = Strings.tr("Localizable", "settings.vibro", fallback: "Vibro")
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

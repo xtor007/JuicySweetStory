@@ -36,6 +36,7 @@ internal enum Asset {
   internal enum Images {
     internal static let checkboxOffIcon = ImageAsset(name: "checkboxOffIcon")
     internal static let checkboxOnIcon = ImageAsset(name: "checkboxOnIcon")
+    internal static let backButtonIcon = ImageAsset(name: "backButtonIcon")
     internal static let backgroundIcon = ImageAsset(name: "backgroundIcon")
     internal static let candyIcon = ImageAsset(name: "candyIcon")
   }

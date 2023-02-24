@@ -23,6 +23,11 @@
 		FFB0A72E29A8ED2200B6BE83 /* ScreenMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB0A72D29A8ED2200B6BE83 /* ScreenMenuView.swift */; };
 		FFB0A73029A8EF9200B6BE83 /* ScreenMenuElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB0A72F29A8EF9200B6BE83 /* ScreenMenuElementView.swift */; };
 		FFB0A73229A8F13800B6BE83 /* Knewave-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFB0A73129A8F13800B6BE83 /* Knewave-Regular.ttf */; };
+		FFB8F57A29A91A53002DDC78 /* View+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB8F57929A91A53002DDC78 /* View+NavigationBar.swift */; };
+		FFB8F57D29A92099002DDC78 /* StrokeTextLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB8F57C29A92099002DDC78 /* StrokeTextLabel.swift */; };
+		FFB8F58029A921C8002DDC78 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB8F57F29A921C8002DDC78 /* BackButton.swift */; };
+		FFB8F58429A9253C002DDC78 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB8F58329A9253C002DDC78 /* SettingsView.swift */; };
+		FFB9378C29A932E40000E770 /* SettingsMenuElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9378B29A932E40000E770 /* SettingsMenuElement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +48,11 @@
 		FFB0A72D29A8ED2200B6BE83 /* ScreenMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenMenuView.swift; sourceTree = "<group>"; };
 		FFB0A72F29A8EF9200B6BE83 /* ScreenMenuElementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenMenuElementView.swift; sourceTree = "<group>"; };
 		FFB0A73129A8F13800B6BE83 /* Knewave-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Knewave-Regular.ttf"; sourceTree = "<group>"; };
+		FFB8F57929A91A53002DDC78 /* View+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+NavigationBar.swift"; sourceTree = "<group>"; };
+		FFB8F57C29A92099002DDC78 /* StrokeTextLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeTextLabel.swift; sourceTree = "<group>"; };
+		FFB8F57F29A921C8002DDC78 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		FFB8F58329A9253C002DDC78 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		FFB9378B29A932E40000E770 /* SettingsMenuElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMenuElement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +101,7 @@
 		FFA6344F29A8DD94009109D9 /* JuicySweetStory */ = {
 			isa = PBXGroup;
 			children = (
+				FFB8F57829A91A29002DDC78 /* Extensions */,
 				FF61624529A8F4A000CA4589 /* Constants */,
 				FFA6346029A8DDFA009109D9 /* Resources */,
 				FFA6345F29A8DDEA009109D9 /* App */,
@@ -102,6 +113,9 @@
 		FFA6345E29A8DDDE009109D9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FFB8F58129A92525002DDC78 /* Settings */,
+				FFB8F57E29A921B4002DDC78 /* BackButton */,
+				FFB8F57B29A92085002DDC78 /* StrokeTextLabel */,
 				FFB0A72829A8EAF200B6BE83 /* ScreenMenu */,
 				FFB0A72429A8E6F300B6BE83 /* Main */,
 				FFA6345229A8DD94009109D9 /* ContentView.swift */,
@@ -181,6 +195,55 @@
 				FFB0A72F29A8EF9200B6BE83 /* ScreenMenuElementView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FFB8F57829A91A29002DDC78 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FFB8F57929A91A53002DDC78 /* View+NavigationBar.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FFB8F57B29A92085002DDC78 /* StrokeTextLabel */ = {
+			isa = PBXGroup;
+			children = (
+				FFB8F57C29A92099002DDC78 /* StrokeTextLabel.swift */,
+			);
+			path = StrokeTextLabel;
+			sourceTree = "<group>";
+		};
+		FFB8F57E29A921B4002DDC78 /* BackButton */ = {
+			isa = PBXGroup;
+			children = (
+				FFB8F57F29A921C8002DDC78 /* BackButton.swift */,
+			);
+			path = BackButton;
+			sourceTree = "<group>";
+		};
+		FFB8F58129A92525002DDC78 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				FFB9378A29A932CC0000E770 /* Model */,
+				FFB8F58229A9252D002DDC78 /* View */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		FFB8F58229A9252D002DDC78 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFB8F58329A9253C002DDC78 /* SettingsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FFB9378A29A932CC0000E770 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FFB9378B29A932E40000E770 /* SettingsMenuElement.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,16 +362,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFB8F58429A9253C002DDC78 /* SettingsView.swift in Sources */,
 				FFA6345329A8DD94009109D9 /* ContentView.swift in Sources */,
 				FF61624729A8F4B300CA4589 /* Gradients.swift in Sources */,
+				FFB8F57A29A91A53002DDC78 /* View+NavigationBar.swift in Sources */,
+				FFB9378C29A932E40000E770 /* SettingsMenuElement.swift in Sources */,
 				FFB0A72729A8E70800B6BE83 /* MainView.swift in Sources */,
 				FFA6345129A8DD94009109D9 /* JuicySweetStoryApp.swift in Sources */,
 				FFB0A72B29A8EB4E00B6BE83 /* ScreenMenuElement.swift in Sources */,
 				FFB0A72329A8E51700B6BE83 /* Strings.generated.swift in Sources */,
 				FFB0A72129A8E51700B6BE83 /* Assets.generated.swift in Sources */,
+				FFB8F57D29A92099002DDC78 /* StrokeTextLabel.swift in Sources */,
 				FFB0A73029A8EF9200B6BE83 /* ScreenMenuElementView.swift in Sources */,
 				FF61624A29A8FDB400CA4589 /* MainViewMenuElement.swift in Sources */,
 				FFB0A72229A8E51700B6BE83 /* Fonts.generated.swift in Sources */,
+				FFB8F58029A921C8002DDC78 /* BackButton.swift in Sources */,
 				FFB0A72E29A8ED2200B6BE83 /* ScreenMenuView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
