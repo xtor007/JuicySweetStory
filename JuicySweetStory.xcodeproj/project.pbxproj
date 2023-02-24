@@ -11,6 +11,9 @@
 		FF61624A29A8FDB400CA4589 /* MainViewMenuElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF61624929A8FDB400CA4589 /* MainViewMenuElement.swift */; };
 		FF9E820729A9519700F819E7 /* LevelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9E820629A9519700F819E7 /* LevelItem.swift */; };
 		FF9E820A29A951F300F819E7 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9E820929A951F300F819E7 /* Level.swift */; };
+		FF9E820D29A9543D00F819E7 /* LevelsStorageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9E820C29A9543D00F819E7 /* LevelsStorageProtocol.swift */; };
+		FF9E820F29A955A000F819E7 /* LevelsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9E820E29A955A000F819E7 /* LevelsStorage.swift */; };
+		FF9E821129A9567800F819E7 /* Collection+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9E821029A9567800F819E7 /* Collection+Safe.swift */; };
 		FFA6345129A8DD94009109D9 /* JuicySweetStoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA6345029A8DD94009109D9 /* JuicySweetStoryApp.swift */; };
 		FFA6345329A8DD94009109D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA6345229A8DD94009109D9 /* ContentView.swift */; };
 		FFA6345529A8DD9A009109D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA6345429A8DD9A009109D9 /* Assets.xcassets */; };
@@ -37,6 +40,9 @@
 		FF61624929A8FDB400CA4589 /* MainViewMenuElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewMenuElement.swift; sourceTree = "<group>"; };
 		FF9E820629A9519700F819E7 /* LevelItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelItem.swift; sourceTree = "<group>"; };
 		FF9E820929A951F300F819E7 /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		FF9E820C29A9543D00F819E7 /* LevelsStorageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsStorageProtocol.swift; sourceTree = "<group>"; };
+		FF9E820E29A955A000F819E7 /* LevelsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsStorage.swift; sourceTree = "<group>"; };
+		FF9E821029A9567800F819E7 /* Collection+Safe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Safe.swift"; sourceTree = "<group>"; };
 		FFA6344D29A8DD94009109D9 /* JuicySweetStory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuicySweetStory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFA6345029A8DD94009109D9 /* JuicySweetStoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuicySweetStoryApp.swift; sourceTree = "<group>"; };
 		FFA6345229A8DD94009109D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				FF9E820B29A9541600F819E7 /* Model */,
+				FF9E820C29A9543D00F819E7 /* LevelsStorageProtocol.swift */,
+				FF9E820E29A955A000F819E7 /* LevelsStorage.swift */,
 			);
 			path = Levels;
 			sourceTree = "<group>";
@@ -231,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				FFB8F57929A91A53002DDC78 /* View+NavigationBar.swift */,
+				FF9E821029A9567800F819E7 /* Collection+Safe.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -404,7 +413,10 @@
 				FFB0A72129A8E51700B6BE83 /* Assets.generated.swift in Sources */,
 				FFB8F57D29A92099002DDC78 /* StrokeTextLabel.swift in Sources */,
 				FF9E820729A9519700F819E7 /* LevelItem.swift in Sources */,
+				FF9E821129A9567800F819E7 /* Collection+Safe.swift in Sources */,
+				FF9E820D29A9543D00F819E7 /* LevelsStorageProtocol.swift in Sources */,
 				FF9E820A29A951F300F819E7 /* Level.swift in Sources */,
+				FF9E820F29A955A000F819E7 /* LevelsStorage.swift in Sources */,
 				FFB0A73029A8EF9200B6BE83 /* ScreenMenuElementView.swift in Sources */,
 				FF61624A29A8FDB400CA4589 /* MainViewMenuElement.swift in Sources */,
 				FFB0A72229A8E51700B6BE83 /* Fonts.generated.swift in Sources */,
