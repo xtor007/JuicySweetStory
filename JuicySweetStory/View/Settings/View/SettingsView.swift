@@ -16,6 +16,7 @@ struct SettingsView: View {
             Spacer()
         }
         .padding(16)
+        .navigationBarBackButtonHidden(true)
         .navigationBar(title: Strings.Settings.title)
         .background {
             Asset.Images.backgroundIcon.swiftUIImage
