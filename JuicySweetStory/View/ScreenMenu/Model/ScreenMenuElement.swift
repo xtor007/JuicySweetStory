@@ -17,5 +17,18 @@ enum ScreenElementMenuType {
 }
 
 enum SettingState {
-    case on, off
+    case stateOn, stateOff
+}
+
+struct ScreenMenuElementPreview: ScreenMenuElement {
+
+    var title: String
+    var type: ScreenElementMenuType
+
+    static let preview = [
+        ScreenMenuElementPreview(title: "Play", type: .justNavigation),
+        ScreenMenuElementPreview(title: "Sound", type: .settings(firstState: .stateOn)),
+        ScreenMenuElementPreview(title: "Vibro", type: .settings(firstState: .stateOff))
+    ]
+
 }
