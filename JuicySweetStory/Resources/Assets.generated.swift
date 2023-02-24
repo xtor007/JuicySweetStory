@@ -34,6 +34,8 @@ internal enum Asset {
     internal static let lightAccentColor = ColorAsset(name: "lightAccentColor")
   }
   internal enum Images {
+    internal static let checkboxOffIcon = ImageAsset(name: "checkboxOffIcon")
+    internal static let checkboxOnIcon = ImageAsset(name: "checkboxOnIcon")
     internal static let backgroundIcon = ImageAsset(name: "backgroundIcon")
   }
 }

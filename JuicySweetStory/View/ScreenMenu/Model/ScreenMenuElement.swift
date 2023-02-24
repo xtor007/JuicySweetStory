@@ -13,12 +13,23 @@ protocol ScreenMenuElement {
     var type: ScreenElementMenuType { get }
 }
 
-enum ScreenElementMenuType {
+enum ScreenElementMenuType: Equatable {
     case justNavigation, settings(firstState: SettingState)
 }
 
 enum SettingState {
+
     case stateOn, stateOff
+
+    func toggle() -> SettingState {
+        switch self {
+        case .stateOn:
+            return .stateOff
+        case .stateOff:
+            return .stateOn
+        }
+    }
+
 }
 
 struct ScreenMenuElementPreview: ScreenMenuElement {

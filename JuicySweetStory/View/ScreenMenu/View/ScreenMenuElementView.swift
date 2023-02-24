@@ -15,7 +15,8 @@ struct ScreenMenuElementView: View {
     let callback: (ScreenMenuElement) -> Void
 
     var body: some View {
-        HStack {
+        HStack(spacing: 16) {
+
             HStack {
                 Spacer()
                 Text(element.title)
@@ -25,18 +26,31 @@ struct ScreenMenuElementView: View {
             }
             .frame(height: 70)
             .background {
-                RoundedRectangle(cornerRadius: 25)
-                    .fill(
-                        Gradients.accentGradient
-                    )
-                    .overlay {
-                        RoundedRectangle(cornerRadius: 25)
-                            .stroke(style: .init(
-                                lineWidth: 5
-                            ))
-                            .fill(Asset.Colors.foregroundColor.swiftUIColor)
-                    }
+                roundedRectangleBackground()
             }
+            .onTapGesture {
+                if element.type == .justNavigation {
+                    callback(element)
+                }
+            }
+
+            if let settingState {
+                HStack {
+                    settingImage(state: settingState)
+                        .resizable()
+                        .scaledToFit()
+                    .frame(height: 28)
+                }
+                .frame(width: 60, height: 60)
+                .background {
+                    roundedRectangleBackground()
+                }
+                .onTapGesture {
+                    callback(element)
+                    self.settingState = settingState.toggle()
+                }
+            }
+
         }
     }
 
@@ -45,9 +59,33 @@ struct ScreenMenuElementView: View {
         self.callback = callback
         switch element.type {
         case .settings(let state):
-            self.settingState = state
+            self._settingState = State(wrappedValue: state)
         default:
             break
+        }
+    }
+
+    @ViewBuilder
+    func roundedRectangleBackground() -> some View {
+        RoundedRectangle(cornerRadius: 25)
+            .fill(
+                Gradients.accentGradient
+            )
+            .overlay {
+                RoundedRectangle(cornerRadius: 25)
+                    .stroke(style: .init(
+                        lineWidth: 5
+                    ))
+                    .fill(Asset.Colors.foregroundColor.swiftUIColor)
+            }
+    }
+
+    func settingImage(state: SettingState) -> Image {
+        switch state {
+        case .stateOn:
+            return Asset.Images.checkboxOnIcon.swiftUIImage
+        case .stateOff:
+            return Asset.Images.checkboxOffIcon.swiftUIImage
         }
     }
 
