@@ -21,14 +21,14 @@ struct CustomNavigationBar: ViewModifier {
                 )
                 .frame(height: 63)
                 HStack {
-                    Button {
+                    BackButton {
                         print(1)
-                    } label: {
-                        Text("b")
                     }
+                    .frame(width: 60)
                     Spacer()
                 }
             }
+            .padding(16)
             content
         }
     }
@@ -43,7 +43,9 @@ extension View {
 
 struct ViewNavigationBar_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        VStack {
+            Spacer()
+        }
             .navigationBar(title: "Settings")
     }
 }
