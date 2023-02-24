@@ -10,9 +10,13 @@ import SwiftUI
 struct SettingsView: View {
     var body: some View {
         VStack {
+            ScreenMenuView(elements: SettingsMenuElement.allCases) { element in
+                print(element.elementId)
+            }
             Spacer()
         }
-        .navigationBar(title: "Settings")
+        .padding(16)
+        .navigationBar(title: Strings.Settings.title)
         .background {
             Asset.Images.backgroundIcon.swiftUIImage
                 .resizable()

@@ -10,3 +10,8 @@
 "mainMenu.gameRules" = "Game rules";
 "mainMenu.settings" = "Settings";
 "mainMenu.privacyPolicy" = "Privacy policy";
+
+"settings.title" = "Settings";
+"settings.sound" = "Sound";
+"settings.rateUs" = "Rate us";
+"settings.vibro" = "Vibro";
