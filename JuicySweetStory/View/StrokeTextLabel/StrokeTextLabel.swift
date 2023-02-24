@@ -37,3 +37,20 @@ struct StrokeTextLabel: UIViewRepresentable {
     func updateUIView(_ uiView: UILabel, context: Context) {}
 
 }
+
+struct StrokeText: View {
+
+    let text: String
+    let fontSize: CGFloat
+    let borderWidth: CGFloat
+
+    var body: some View {
+        ZStack {
+            StrokeTextLabel(text: text, fontSize: fontSize, borderWidth: borderWidth)
+            Text(text)
+                .foregroundColor(Asset.Colors.foregroundColor.swiftUIColor)
+                .font(.custom(FontFamily.Knewave.regular, size: fontSize))
+        }
+    }
+
+}

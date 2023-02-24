@@ -16,10 +16,10 @@ struct CustomNavigationBar: ViewModifier {
     func body(content: Content) -> some View {
         VStack {
             ZStack {
-                StrokeTextLabel(
+                StrokeText(
                     text: title.uppercased(),
                     fontSize: 34,
-                    borderWidth: 10
+                    borderWidth: 30
                 )
                 .frame(height: 63)
                 HStack {
