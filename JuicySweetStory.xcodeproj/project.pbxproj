@@ -10,7 +10,6 @@
 		FFA6345129A8DD94009109D9 /* JuicySweetStoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA6345029A8DD94009109D9 /* JuicySweetStoryApp.swift */; };
 		FFA6345329A8DD94009109D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA6345229A8DD94009109D9 /* ContentView.swift */; };
 		FFA6345529A8DD9A009109D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA6345429A8DD9A009109D9 /* Assets.xcassets */; };
-		FFA6345829A8DD9A009109D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA6345729A8DD9A009109D9 /* Preview Assets.xcassets */; };
 		FFA6346229A8DF1D009109D9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA6346129A8DF1D009109D9 /* Images.xcassets */; };
 		FFA6346429A8DF29009109D9 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA6346329A8DF29009109D9 /* Colors.xcassets */; };
 		FFA6346729A8DF46009109D9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFA6346929A8DF46009109D9 /* Localizable.strings */; };
@@ -24,7 +23,6 @@
 		FFA6345029A8DD94009109D9 /* JuicySweetStoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuicySweetStoryApp.swift; sourceTree = "<group>"; };
 		FFA6345229A8DD94009109D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FFA6345429A8DD9A009109D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FFA6345729A8DD9A009109D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FFA6346129A8DF1D009109D9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FFA6346329A8DF29009109D9 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		FFA6346829A8DF46009109D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -66,17 +64,8 @@
 				FFA6346029A8DDFA009109D9 /* Resources */,
 				FFA6345F29A8DDEA009109D9 /* App */,
 				FFA6345E29A8DDDE009109D9 /* View */,
-				FFA6345629A8DD9A009109D9 /* Preview Content */,
 			);
 			path = JuicySweetStory;
-			sourceTree = "<group>";
-		};
-		FFA6345629A8DD9A009109D9 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				FFA6345729A8DD9A009109D9 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		FFA6345E29A8DDDE009109D9 /* View */ = {
@@ -180,7 +169,6 @@
 				FFA6346729A8DF46009109D9 /* Localizable.strings in Resources */,
 				FFA6346229A8DF1D009109D9 /* Images.xcassets in Resources */,
 				FFA6346429A8DF29009109D9 /* Colors.xcassets in Resources */,
-				FFA6345829A8DD9A009109D9 /* Preview Assets.xcassets in Resources */,
 				FFA6345529A8DD9A009109D9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,7 +364,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"JuicySweetStory/Preview Content\"";
 				DEVELOPMENT_TEAM = AF68Y4A9MG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -405,7 +392,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"JuicySweetStory/Preview Content\"";
 				DEVELOPMENT_TEAM = AF68Y4A9MG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
