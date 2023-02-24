@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		FF61624729A8F4B300CA4589 /* Gradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF61624629A8F4B300CA4589 /* Gradients.swift */; };
 		FF61624A29A8FDB400CA4589 /* MainViewMenuElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF61624929A8FDB400CA4589 /* MainViewMenuElement.swift */; };
+		FF9E820729A9519700F819E7 /* LevelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9E820629A9519700F819E7 /* LevelItem.swift */; };
+		FF9E820A29A951F300F819E7 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9E820929A951F300F819E7 /* Level.swift */; };
 		FFA6345129A8DD94009109D9 /* JuicySweetStoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA6345029A8DD94009109D9 /* JuicySweetStoryApp.swift */; };
 		FFA6345329A8DD94009109D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA6345229A8DD94009109D9 /* ContentView.swift */; };
 		FFA6345529A8DD9A009109D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA6345429A8DD9A009109D9 /* Assets.xcassets */; };
@@ -33,6 +35,8 @@
 /* Begin PBXFileReference section */
 		FF61624629A8F4B300CA4589 /* Gradients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradients.swift; sourceTree = "<group>"; };
 		FF61624929A8FDB400CA4589 /* MainViewMenuElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewMenuElement.swift; sourceTree = "<group>"; };
+		FF9E820629A9519700F819E7 /* LevelItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelItem.swift; sourceTree = "<group>"; };
+		FF9E820929A951F300F819E7 /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 		FFA6344D29A8DD94009109D9 /* JuicySweetStory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuicySweetStory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFA6345029A8DD94009109D9 /* JuicySweetStoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuicySweetStoryApp.swift; sourceTree = "<group>"; };
 		FFA6345229A8DD94009109D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -82,6 +86,31 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		FF9E820429A9516200F819E7 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				FF9E820529A9516B00F819E7 /* Levels */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		FF9E820529A9516B00F819E7 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				FF9E820B29A9541600F819E7 /* Model */,
+			);
+			path = Levels;
+			sourceTree = "<group>";
+		};
+		FF9E820B29A9541600F819E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF9E820629A9519700F819E7 /* LevelItem.swift */,
+				FF9E820929A951F300F819E7 /* Level.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FFA6344429A8DD94009109D9 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +130,7 @@
 		FFA6344F29A8DD94009109D9 /* JuicySweetStory */ = {
 			isa = PBXGroup;
 			children = (
+				FF9E820429A9516200F819E7 /* Storage */,
 				FFB8F57829A91A29002DDC78 /* Extensions */,
 				FF61624529A8F4A000CA4589 /* Constants */,
 				FFA6346029A8DDFA009109D9 /* Resources */,
@@ -373,6 +403,8 @@
 				FFB0A72329A8E51700B6BE83 /* Strings.generated.swift in Sources */,
 				FFB0A72129A8E51700B6BE83 /* Assets.generated.swift in Sources */,
 				FFB8F57D29A92099002DDC78 /* StrokeTextLabel.swift in Sources */,
+				FF9E820729A9519700F819E7 /* LevelItem.swift in Sources */,
+				FF9E820A29A951F300F819E7 /* Level.swift in Sources */,
 				FFB0A73029A8EF9200B6BE83 /* ScreenMenuElementView.swift in Sources */,
 				FF61624A29A8FDB400CA4589 /* MainViewMenuElement.swift in Sources */,
 				FFB0A72229A8E51700B6BE83 /* Fonts.generated.swift in Sources */,
