@@ -5,3 +5,8 @@
   Created by Anatoliy Khramchenko on 24.02.2023.
   
 */
+
+"mainMenu.play" = "Play";
+"mainMenu.gameRules" = "Game rules";
+"mainMenu.settings" = "Settings";
+"mainMenu.privacyPolicy" = "Privacy policy";

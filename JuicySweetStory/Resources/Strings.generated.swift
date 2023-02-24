@@ -10,6 +10,19 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum Strings {
+  internal enum MainMenu {
+    /// Game rules
+    internal static let gameRules = Strings.tr("Localizable", "mainMenu.gameRules", fallback: "Game rules")
+    /// Localizable.strings
+    ///   JuicySweetStory
+    /// 
+    ///   Created by Anatoliy Khramchenko on 24.02.2023.
+    internal static let play = Strings.tr("Localizable", "mainMenu.play", fallback: "Play")
+    /// Privacy policy
+    internal static let privacyPolicy = Strings.tr("Localizable", "mainMenu.privacyPolicy", fallback: "Privacy policy")
+    /// Settings
+    internal static let settings = Strings.tr("Localizable", "mainMenu.settings", fallback: "Settings")
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

@@ -11,9 +11,10 @@ struct MainView: View {
     var body: some View {
         VStack {
             Spacer()
-            HStack {
-                Spacer()
+            ScreenMenuView(elements: MainViewMenuElement.allCases) { element in
+                print(element.elementId)
             }
+            Spacer()
         }
         .background {
             Asset.Images.backgroundIcon.swiftUIImage

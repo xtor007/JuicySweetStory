@@ -19,7 +19,7 @@ struct ScreenMenuElementView: View {
 
             HStack {
                 Spacer()
-                Text(element.title)
+                Text(element.title.uppercased())
                     .font(.custom(FontFamily.Knewave.regular, size: 34))
                     .foregroundColor(Asset.Colors.foregroundColor.swiftUIColor)
                 Spacer()

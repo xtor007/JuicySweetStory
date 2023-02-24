@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FF61624729A8F4B300CA4589 /* Gradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF61624629A8F4B300CA4589 /* Gradients.swift */; };
+		FF61624A29A8FDB400CA4589 /* MainViewMenuElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF61624929A8FDB400CA4589 /* MainViewMenuElement.swift */; };
 		FFA6345129A8DD94009109D9 /* JuicySweetStoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA6345029A8DD94009109D9 /* JuicySweetStoryApp.swift */; };
 		FFA6345329A8DD94009109D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA6345229A8DD94009109D9 /* ContentView.swift */; };
 		FFA6345529A8DD9A009109D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA6345429A8DD9A009109D9 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		FF61624629A8F4B300CA4589 /* Gradients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradients.swift; sourceTree = "<group>"; };
+		FF61624929A8FDB400CA4589 /* MainViewMenuElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewMenuElement.swift; sourceTree = "<group>"; };
 		FFA6344D29A8DD94009109D9 /* JuicySweetStory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuicySweetStory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFA6345029A8DD94009109D9 /* JuicySweetStoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuicySweetStoryApp.swift; sourceTree = "<group>"; };
 		FFA6345229A8DD94009109D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +62,14 @@
 				FF61624629A8F4B300CA4589 /* Gradients.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		FF61624829A8FD9E00CA4589 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF61624929A8FDB400CA4589 /* MainViewMenuElement.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		FFA6344429A8DD94009109D9 = {
@@ -133,6 +143,7 @@
 		FFB0A72429A8E6F300B6BE83 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				FF61624829A8FD9E00CA4589 /* Model */,
 				FFB0A72529A8E6F900B6BE83 /* View */,
 			);
 			path = Main;
@@ -296,6 +307,7 @@
 				FFB0A72329A8E51700B6BE83 /* Strings.generated.swift in Sources */,
 				FFB0A72129A8E51700B6BE83 /* Assets.generated.swift in Sources */,
 				FFB0A73029A8EF9200B6BE83 /* ScreenMenuElementView.swift in Sources */,
+				FF61624A29A8FDB400CA4589 /* MainViewMenuElement.swift in Sources */,
 				FFB0A72229A8E51700B6BE83 /* Fonts.generated.swift in Sources */,
 				FFB0A72E29A8ED2200B6BE83 /* ScreenMenuView.swift in Sources */,
 			);
