@@ -37,6 +37,7 @@ internal enum Asset {
     internal static let checkboxOffIcon = ImageAsset(name: "checkboxOffIcon")
     internal static let checkboxOnIcon = ImageAsset(name: "checkboxOnIcon")
     internal static let backgroundIcon = ImageAsset(name: "backgroundIcon")
+    internal static let candyIcon = ImageAsset(name: "candyIcon")
   }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
