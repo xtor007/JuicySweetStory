@@ -14,7 +14,7 @@ class LevelsStorage: LevelsStorageProtocol {
     private let levels = [Level]()
 
     func getLevel(_ levelNumber: Int) -> Level? {
-        return levels[safe: levelNumber]
+        return levels[safe: levelNumber - 1]
     }
 
 }
