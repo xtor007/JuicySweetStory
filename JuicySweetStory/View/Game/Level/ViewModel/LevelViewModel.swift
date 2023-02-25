@@ -16,8 +16,7 @@ class LevelViewModel: ObservableObject {
     @Published var currentTimeLeft: Int
     @Published var puzzles: [[Puzzle]]
 
-    @Published var isWin = false
-    @Published var isLose = false
+    @Published var gameStatus: GameStatus?
 
     let level: Level
 
@@ -60,7 +59,7 @@ class LevelViewModel: ObservableObject {
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
             self.currentTimeLeft -= 1
             if self.currentTimeLeft == 0 {
-                self.isLose = true
+                self.gameStatus = .lose
                 timer.invalidate()
             }
         }
@@ -102,8 +101,8 @@ class LevelViewModel: ObservableObject {
                 }
             }
         }
-        isWin = true
-        print("WIIIIIIIIN")
+        gameStatus = .win
+        timer?.invalidate()
     }
 
 }
