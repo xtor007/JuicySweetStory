@@ -17,6 +17,7 @@ struct LevelNavigationBar: View {
         HStack {
             BackButton {
                 presentationMode.wrappedValue.dismiss()
+                levelViewModel.stop()
                 gameViewModel.currentLevel = nil
             }
             Spacer()
@@ -24,9 +25,9 @@ struct LevelNavigationBar: View {
                 levelViewModel.refresh()
             }
             Spacer()
-            StrokeTextWithBackground(text: "LVL-1", fontSize: 24, borderWidth: 18)
+            StrokeTextWithBackground(text: "\(Strings.Level.level)-\(levelViewModel.level.number)", fontSize: 24, borderWidth: 18)
             Spacer()
-            StrokeTextWithBackground(text: "02:55", fontSize: 24, borderWidth: 18)
+            StrokeTextWithBackground(text: levelViewModel.currentTimeLeft.timeDescription, fontSize: 24, borderWidth: 18)
         }
         .frame(height: 40)
     }

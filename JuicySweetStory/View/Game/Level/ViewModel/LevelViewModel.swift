@@ -13,7 +13,7 @@ class LevelViewModel: ObservableObject {
     static let rowsCount = 4
 
     @Published var maxTime: Int
-    @Published var currentTime = 0
+    @Published var currentTimeLeft: Int
     @Published var puzzles: [[Puzzle]]
 
     @Published var isWin = false
@@ -23,10 +23,13 @@ class LevelViewModel: ObservableObject {
 
     private let timeForFirstLevel = 180
     private let timeDelta = 10
+    private var timer: Timer?
 
     init(level: Level) {
         self.level = level
-        maxTime = timeForFirstLevel - (timeDelta * (level.number - 1))
+        let maxTime = timeForFirstLevel - (timeDelta * (level.number - 1))
+        self.maxTime = maxTime
+        currentTimeLeft = maxTime
         puzzles = LevelViewModel.createPuzzles(level: level)
     }
 
@@ -53,6 +56,23 @@ class LevelViewModel: ObservableObject {
         return puzzeles
     }
 
+    func start() {
+        timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
+            self.currentTimeLeft -= 1
+            if self.currentTimeLeft == 0 {
+                self.isLose = true
+                timer.invalidate()
+            }
+        }
+    }
+
+    func stop() {
+        if let timer {
+            timer.invalidate()
+            self.timer = nil
+        }
+    }
+
     func movePuzzle(_ puzzle: Puzzle, to direction: Direction) {
         let newCoordinate = puzzle.currentPosition.move(to: direction)
         guard 0..<LevelViewModel.columnsCount ~= newCoordinate.coordinateX
@@ -70,7 +90,7 @@ class LevelViewModel: ObservableObject {
 
     func refresh() {
         puzzles = LevelViewModel.createPuzzles(level: level)
-        currentTime = 0
+        currentTimeLeft = maxTime
     }
 
     private func checkWin() {

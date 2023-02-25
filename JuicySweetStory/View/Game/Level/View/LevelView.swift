@@ -41,6 +41,9 @@ struct LevelView: View {
                 .resizable()
                 .ignoresSafeArea()
         }
+        .onAppear {
+            levelViewModel.start()
+        }
     }
 }
 

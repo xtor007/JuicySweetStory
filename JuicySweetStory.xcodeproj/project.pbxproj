@@ -40,6 +40,7 @@
 		FFB5737F29AAB8BF001061A5 /* LevelNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5737E29AAB8BF001061A5 /* LevelNavigationBar.swift */; };
 		FFB5738229AABA27001061A5 /* RefreshButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5738129AABA27001061A5 /* RefreshButton.swift */; };
 		FFB5738429AABB8E001061A5 /* StrokeTextWithBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5738329AABB8E001061A5 /* StrokeTextWithBackground.swift */; };
+		FFB5738629AABF05001061A5 /* Int+TimeDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5738529AABF05001061A5 /* Int+TimeDescription.swift */; };
 		FFB8F57A29A91A53002DDC78 /* View+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB8F57929A91A53002DDC78 /* View+NavigationBar.swift */; };
 		FFB8F57D29A92099002DDC78 /* StrokeTextLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB8F57C29A92099002DDC78 /* StrokeTextLabel.swift */; };
 		FFB8F58029A921C8002DDC78 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB8F57F29A921C8002DDC78 /* BackButton.swift */; };
@@ -82,6 +83,7 @@
 		FFB5737E29AAB8BF001061A5 /* LevelNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelNavigationBar.swift; sourceTree = "<group>"; };
 		FFB5738129AABA27001061A5 /* RefreshButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshButton.swift; sourceTree = "<group>"; };
 		FFB5738329AABB8E001061A5 /* StrokeTextWithBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeTextWithBackground.swift; sourceTree = "<group>"; };
+		FFB5738529AABF05001061A5 /* Int+TimeDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+TimeDescription.swift"; sourceTree = "<group>"; };
 		FFB8F57929A91A53002DDC78 /* View+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+NavigationBar.swift"; sourceTree = "<group>"; };
 		FFB8F57C29A92099002DDC78 /* StrokeTextLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeTextLabel.swift; sourceTree = "<group>"; };
 		FFB8F57F29A921C8002DDC78 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
@@ -355,6 +357,7 @@
 			children = (
 				FFB8F57929A91A53002DDC78 /* View+NavigationBar.swift */,
 				FF9E821029A9567800F819E7 /* Collection+Safe.swift */,
+				FFB5738529AABF05001061A5 /* Int+TimeDescription.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -528,6 +531,7 @@
 				FFA6345129A8DD94009109D9 /* JuicySweetStoryApp.swift in Sources */,
 				FFB0A72B29A8EB4E00B6BE83 /* ScreenMenuElement.swift in Sources */,
 				FF9E821829A9641800F819E7 /* LevelsViewItem.swift in Sources */,
+				FFB5738629AABF05001061A5 /* Int+TimeDescription.swift in Sources */,
 				FFB0A72329A8E51700B6BE83 /* Strings.generated.swift in Sources */,
 				FFB0A72129A8E51700B6BE83 /* Assets.generated.swift in Sources */,
 				FFB8F57D29A92099002DDC78 /* StrokeTextLabel.swift in Sources */,
