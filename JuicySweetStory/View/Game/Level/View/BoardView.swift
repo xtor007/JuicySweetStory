@@ -32,11 +32,11 @@ struct BoardView: View {
                 }
                 .clipShape(
                     RoundedRectangle(
-                        cornerRadius: geo.size.width / CGFloat(LevelViewModel.columnsCount * 2)
+                        cornerRadius: geo.size.width / CGFloat(LevelViewModel.columnsCount) / (CGFloat.pi / 2)
                     )
                 )
             }
-            .padding(20)
+            .padding(16)
         }
         .aspectRatio(1, contentMode: .fit)
     }

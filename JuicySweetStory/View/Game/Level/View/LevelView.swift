@@ -14,8 +14,18 @@ struct LevelView: View {
     @StateObject var levelViewModel: LevelViewModel
 
     var body: some View {
-        BoardView()
-            .environmentObject(levelViewModel)
+        VStack {
+            Spacer()
+            BoardView()
+                .frame(width: 357, height: 350)
+                .environmentObject(levelViewModel)
+            Spacer()
+        }
+        .background {
+            Asset.Images.backgroundIcon.swiftUIImage
+                .resizable()
+                .ignoresSafeArea()
+        }
     }
 }
 
