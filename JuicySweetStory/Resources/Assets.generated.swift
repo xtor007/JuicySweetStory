@@ -37,6 +37,7 @@ internal enum Asset {
   internal enum Images {
     internal static let checkboxOffIcon = ImageAsset(name: "checkboxOffIcon")
     internal static let checkboxOnIcon = ImageAsset(name: "checkboxOnIcon")
+    internal static let bigCandyFrame = ImageAsset(name: "bigCandyFrame")
     internal static let smallCandyFrame = ImageAsset(name: "smallCandyFrame")
     internal static let level100 = ImageAsset(name: "level100")
     internal static let level101 = ImageAsset(name: "level101")
@@ -102,6 +103,7 @@ internal enum Asset {
     internal static let backgroundIcon = ImageAsset(name: "backgroundIcon")
     internal static let blockCandyIcon = ImageAsset(name: "blockCandyIcon")
     internal static let candyIcon = ImageAsset(name: "candyIcon")
+    internal static let refreshButtonIcon = ImageAsset(name: "refreshButtonIcon")
   }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name

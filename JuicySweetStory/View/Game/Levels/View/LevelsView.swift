@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LevelsView: View {
 
-    private let levelsStorage: LevelsStorageProtocol = LevelsStorage()
+    @EnvironmentObject var gameViewModel: GameViewModel
 
     private let columns = [
         GridItem(.adaptive(minimum: 100, maximum: 100), spacing: 16)
@@ -17,16 +17,16 @@ struct LevelsView: View {
 
     var body: some View {
         ScrollView(showsIndicators: false) {
-            LazyVGrid(columns: columns, spacing: 16) {
-                ForEach(0..<levelsStorage.levelCount, id: \.self) { levelIndex in
-                    if let level = levelsStorage.getLevel(levelIndex + 1) {
+            LazyVGrid(columns: columns, spacing: 8) {
+                ForEach(0..<gameViewModel.levelsStorage.levelCount, id: \.self) { levelIndex in
+                    if let level = gameViewModel.levelsStorage.getLevel(levelIndex + 1) {
                         LevelsViewItem(
                             level: level,
-                            isOpen: level.number <= levelsStorage.maxLevel
+                            isOpen: gameViewModel.isLevelOpen[levelIndex]
                         )
                         .onTapGesture {
-                            if level.number <= levelsStorage.maxLevel {
-                                print(1)
+                            if gameViewModel.isLevelOpen[levelIndex] {
+                                gameViewModel.openLevel(levelIndex: levelIndex)
                             }
                         }
                     }
@@ -41,6 +41,10 @@ struct LevelsView: View {
                 .resizable()
                 .ignoresSafeArea()
         }
+        .navigationDestination(isPresented: $gameViewModel.willOpenGame) {
+            GameView()
+                .environmentObject(gameViewModel)
+        }
     }
 
 }
@@ -48,5 +52,6 @@ struct LevelsView: View {
 struct LevelsView_Previews: PreviewProvider {
     static var previews: some View {
         LevelsView()
+            .environmentObject(GameViewModel(levelsStorage: LevelsStorage()))
     }
 }

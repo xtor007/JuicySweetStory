@@ -34,7 +34,9 @@ struct StrokeTextLabel: UIViewRepresentable {
         return strokeLabel
     }
 
-    func updateUIView(_ uiView: UILabel, context: Context) {}
+    func updateUIView(_ uiView: UILabel, context: Context) {
+        uiView.text = text
+    }
 
 }
 
