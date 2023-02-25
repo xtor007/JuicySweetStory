@@ -20,6 +20,18 @@ struct LevelView: View {
                 .frame(width: 357, height: 350)
                 .environmentObject(levelViewModel)
             Spacer()
+            ZStack {
+                levelViewModel.level.resultImage
+                    .resizable()
+                    .scaledToFit()
+                    .clipShape(RoundedRectangle(cornerRadius: 35))
+                    .padding(8)
+                Asset.Images.bigCandyFrame.swiftUIImage
+                    .resizable()
+                    .scaledToFit()
+            }
+            .frame(height: 226)
+            Spacer()
         }
         .background {
             Asset.Images.backgroundIcon.swiftUIImage
