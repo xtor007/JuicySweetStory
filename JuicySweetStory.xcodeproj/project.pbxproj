@@ -31,6 +31,9 @@
 		FFB0A72E29A8ED2200B6BE83 /* ScreenMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB0A72D29A8ED2200B6BE83 /* ScreenMenuView.swift */; };
 		FFB0A73029A8EF9200B6BE83 /* ScreenMenuElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB0A72F29A8EF9200B6BE83 /* ScreenMenuElementView.swift */; };
 		FFB0A73229A8F13800B6BE83 /* Knewave-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFB0A73129A8F13800B6BE83 /* Knewave-Regular.ttf */; };
+		FFB5737029AA64D6001061A5 /* LevelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5736F29AA64D6001061A5 /* LevelViewModel.swift */; };
+		FFB5737329AA6522001061A5 /* Puzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5737229AA6522001061A5 /* Puzzle.swift */; };
+		FFB5737529AA6E25001061A5 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5737429AA6E25001061A5 /* Direction.swift */; };
 		FFB8F57A29A91A53002DDC78 /* View+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB8F57929A91A53002DDC78 /* View+NavigationBar.swift */; };
 		FFB8F57D29A92099002DDC78 /* StrokeTextLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB8F57C29A92099002DDC78 /* StrokeTextLabel.swift */; };
 		FFB8F58029A921C8002DDC78 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB8F57F29A921C8002DDC78 /* BackButton.swift */; };
@@ -64,6 +67,9 @@
 		FFB0A72D29A8ED2200B6BE83 /* ScreenMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenMenuView.swift; sourceTree = "<group>"; };
 		FFB0A72F29A8EF9200B6BE83 /* ScreenMenuElementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenMenuElementView.swift; sourceTree = "<group>"; };
 		FFB0A73129A8F13800B6BE83 /* Knewave-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Knewave-Regular.ttf"; sourceTree = "<group>"; };
+		FFB5736F29AA64D6001061A5 /* LevelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelViewModel.swift; sourceTree = "<group>"; };
+		FFB5737229AA6522001061A5 /* Puzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle.swift; sourceTree = "<group>"; };
+		FFB5737429AA6E25001061A5 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		FFB8F57929A91A53002DDC78 /* View+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+NavigationBar.swift"; sourceTree = "<group>"; };
 		FFB8F57C29A92099002DDC78 /* StrokeTextLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeTextLabel.swift; sourceTree = "<group>"; };
 		FFB8F57F29A921C8002DDC78 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
@@ -128,6 +134,7 @@
 		FF9E821229A963D400F819E7 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				FFB5736D29AA64B9001061A5 /* Level */,
 				FF9E821929AA057B00F819E7 /* ViewModel */,
 				FF9E821329A963DC00F819E7 /* Levels */,
 			);
@@ -274,6 +281,32 @@
 				FFB0A72F29A8EF9200B6BE83 /* ScreenMenuElementView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FFB5736D29AA64B9001061A5 /* Level */ = {
+			isa = PBXGroup;
+			children = (
+				FFB5737129AA6507001061A5 /* Model */,
+				FFB5736E29AA64C2001061A5 /* ViewModel */,
+			);
+			path = Level;
+			sourceTree = "<group>";
+		};
+		FFB5736E29AA64C2001061A5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FFB5736F29AA64D6001061A5 /* LevelViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FFB5737129AA6507001061A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FFB5737229AA6522001061A5 /* Puzzle.swift */,
+				FFB5737429AA6E25001061A5 /* Direction.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		FFB8F57829A91A29002DDC78 /* Extensions */ = {
@@ -454,10 +487,12 @@
 				FFB0A72329A8E51700B6BE83 /* Strings.generated.swift in Sources */,
 				FFB0A72129A8E51700B6BE83 /* Assets.generated.swift in Sources */,
 				FFB8F57D29A92099002DDC78 /* StrokeTextLabel.swift in Sources */,
+				FFB5737029AA64D6001061A5 /* LevelViewModel.swift in Sources */,
 				FF9E821B29AA059100F819E7 /* GameViewModel.swift in Sources */,
 				FF9E820729A9519700F819E7 /* LevelItem.swift in Sources */,
 				FF9E821129A9567800F819E7 /* Collection+Safe.swift in Sources */,
 				FF9E820D29A9543D00F819E7 /* LevelsStorageProtocol.swift in Sources */,
+				FFB5737329AA6522001061A5 /* Puzzle.swift in Sources */,
 				FF9E820A29A951F300F819E7 /* Level.swift in Sources */,
 				FF9E820F29A955A000F819E7 /* LevelsStorage.swift in Sources */,
 				FFB0A73029A8EF9200B6BE83 /* ScreenMenuElementView.swift in Sources */,
@@ -466,6 +501,7 @@
 				FFB8F58029A921C8002DDC78 /* BackButton.swift in Sources */,
 				FFB0A72E29A8ED2200B6BE83 /* ScreenMenuView.swift in Sources */,
 				FF9E821629A963F400F819E7 /* LevelsView.swift in Sources */,
+				FFB5737529AA6E25001061A5 /* Direction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

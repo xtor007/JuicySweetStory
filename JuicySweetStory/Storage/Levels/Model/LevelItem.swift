@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LevelItem {
+struct LevelItem: Equatable {
     let itemImage: Image
     let correctX: Int
     let correctY: Int
