@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MainView: View {
 
+    @StateObject var gameViewModel = GameViewModel(levelsStorage: LevelsStorage())
+
     @State var willMoveToNextScreen = false
     @State var nextView = AnyView(ContentView())
 
@@ -43,7 +45,10 @@ struct MainView: View {
         }
         switch mainManuElement {
         case .play:
-            nextView = AnyView(LevelsView())
+            nextView = AnyView(
+                LevelsView()
+                    .environmentObject(gameViewModel)
+            )
         case .gameRules:
             nextView = AnyView(ContentView())
         case .settings:

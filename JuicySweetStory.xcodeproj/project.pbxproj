@@ -16,6 +16,7 @@
 		FF9E821129A9567800F819E7 /* Collection+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9E821029A9567800F819E7 /* Collection+Safe.swift */; };
 		FF9E821629A963F400F819E7 /* LevelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9E821529A963F400F819E7 /* LevelsView.swift */; };
 		FF9E821829A9641800F819E7 /* LevelsViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9E821729A9641800F819E7 /* LevelsViewItem.swift */; };
+		FF9E821B29AA059100F819E7 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9E821A29AA059100F819E7 /* GameViewModel.swift */; };
 		FFA6345129A8DD94009109D9 /* JuicySweetStoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA6345029A8DD94009109D9 /* JuicySweetStoryApp.swift */; };
 		FFA6345329A8DD94009109D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA6345229A8DD94009109D9 /* ContentView.swift */; };
 		FFA6345529A8DD9A009109D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA6345429A8DD9A009109D9 /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 		FF9E821029A9567800F819E7 /* Collection+Safe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Safe.swift"; sourceTree = "<group>"; };
 		FF9E821529A963F400F819E7 /* LevelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsView.swift; sourceTree = "<group>"; };
 		FF9E821729A9641800F819E7 /* LevelsViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsViewItem.swift; sourceTree = "<group>"; };
+		FF9E821A29AA059100F819E7 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		FFA6344D29A8DD94009109D9 /* JuicySweetStory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuicySweetStory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFA6345029A8DD94009109D9 /* JuicySweetStoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuicySweetStoryApp.swift; sourceTree = "<group>"; };
 		FFA6345229A8DD94009109D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 		FF9E821229A963D400F819E7 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				FF9E821929AA057B00F819E7 /* ViewModel */,
 				FF9E821329A963DC00F819E7 /* Levels */,
 			);
 			path = Game;
@@ -146,6 +149,14 @@
 				FF9E821729A9641800F819E7 /* LevelsViewItem.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FF9E821929AA057B00F819E7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF9E821A29AA059100F819E7 /* GameViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		FFA6344429A8DD94009109D9 = {
@@ -443,6 +454,7 @@
 				FFB0A72329A8E51700B6BE83 /* Strings.generated.swift in Sources */,
 				FFB0A72129A8E51700B6BE83 /* Assets.generated.swift in Sources */,
 				FFB8F57D29A92099002DDC78 /* StrokeTextLabel.swift in Sources */,
+				FF9E821B29AA059100F819E7 /* GameViewModel.swift in Sources */,
 				FF9E820729A9519700F819E7 /* LevelItem.swift in Sources */,
 				FF9E821129A9567800F819E7 /* Collection+Safe.swift in Sources */,
 				FF9E820D29A9543D00F819E7 /* LevelsStorageProtocol.swift in Sources */,
