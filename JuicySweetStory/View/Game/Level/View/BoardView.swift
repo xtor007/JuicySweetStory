@@ -27,6 +27,7 @@ struct BoardView: View {
                             Spacer()
                         }
                     }
+                    Asset.Colors.foregroundColor.swiftUIColor
                     puzzlesView(elementWidth: elementWidth, elementHeight: elementHeight)
                 }
                 .clipShape(
@@ -47,10 +48,10 @@ struct BoardView: View {
                 let puzzle = levelViewModel.puzzles[puzzlesIndex][puzzleIndex]
                 puzzle.puzzleImage
                     .resizable()
-                    .frame(width: elementWidth, height: elementHeight)
+                    .frame(width: elementWidth - 8, height: elementHeight - 8)
                     .offset(
-                        x: CGFloat(puzzle.currentPosition.coordinateX) * elementWidth,
-                        y: CGFloat(puzzle.currentPosition.coordinateY) * elementHeight
+                        x: 4 + CGFloat(puzzle.currentPosition.coordinateX) * elementWidth,
+                        y: 4 + CGFloat(puzzle.currentPosition.coordinateY) * elementHeight
                     )
                     .gesture(DragGesture(minimumDistance: 3.0, coordinateSpace: .local)
                         .onEnded { value in

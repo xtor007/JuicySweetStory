@@ -77,6 +77,7 @@ class LevelViewModel: ObservableObject {
             }
         }
         isWin = true
+        print("WIIIIIIIIN")
     }
 
 }
