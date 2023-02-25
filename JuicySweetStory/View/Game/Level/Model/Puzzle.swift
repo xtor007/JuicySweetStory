@@ -26,7 +26,7 @@ struct Position: Equatable {
             return Position(coordinateX: coordinateX, coordinateY: coordinateY + 1)
         case .left:
             return Position(coordinateX: coordinateX - 1, coordinateY: coordinateY)
-        case .up:
+        case .top:
             return Position(coordinateX: coordinateX, coordinateY: coordinateY - 1)
         }
     }
