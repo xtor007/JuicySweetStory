@@ -20,7 +20,7 @@ class GameViewModel: ObservableObject {
             }
         }
     }
-    @Published private(set) var willOpenGame = false
+    @Published var willOpenGame = false
 
     init(levelsStorage: LevelsStorageProtocol) {
         self.levelsStorage = levelsStorage

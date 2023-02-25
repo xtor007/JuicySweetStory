@@ -42,7 +42,8 @@ struct LevelsView: View {
                 .ignoresSafeArea()
         }
         .navigationDestination(isPresented: $gameViewModel.willOpenGame) {
-            ContentView()
+            GameView()
+                .environmentObject(gameViewModel)
         }
     }
 
