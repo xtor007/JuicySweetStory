@@ -36,6 +36,7 @@
 		FFB5737529AA6E25001061A5 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5737429AA6E25001061A5 /* Direction.swift */; };
 		FFB5737829AA7D0D001061A5 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5737729AA7D0D001061A5 /* GameView.swift */; };
 		FFB5737B29AA7DA2001061A5 /* LevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5737A29AA7DA2001061A5 /* LevelView.swift */; };
+		FFB5737D29AA8CB7001061A5 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5737C29AA8CB7001061A5 /* BoardView.swift */; };
 		FFB8F57A29A91A53002DDC78 /* View+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB8F57929A91A53002DDC78 /* View+NavigationBar.swift */; };
 		FFB8F57D29A92099002DDC78 /* StrokeTextLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB8F57C29A92099002DDC78 /* StrokeTextLabel.swift */; };
 		FFB8F58029A921C8002DDC78 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB8F57F29A921C8002DDC78 /* BackButton.swift */; };
@@ -74,6 +75,7 @@
 		FFB5737429AA6E25001061A5 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		FFB5737729AA7D0D001061A5 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		FFB5737A29AA7DA2001061A5 /* LevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelView.swift; sourceTree = "<group>"; };
+		FFB5737C29AA8CB7001061A5 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 		FFB8F57929A91A53002DDC78 /* View+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+NavigationBar.swift"; sourceTree = "<group>"; };
 		FFB8F57C29A92099002DDC78 /* StrokeTextLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeTextLabel.swift; sourceTree = "<group>"; };
 		FFB8F57F29A921C8002DDC78 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
@@ -327,6 +329,7 @@
 			isa = PBXGroup;
 			children = (
 				FFB5737A29AA7DA2001061A5 /* LevelView.swift */,
+				FFB5737C29AA8CB7001061A5 /* BoardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -524,6 +527,7 @@
 				FFB0A72229A8E51700B6BE83 /* Fonts.generated.swift in Sources */,
 				FFB8F58029A921C8002DDC78 /* BackButton.swift in Sources */,
 				FFB0A72E29A8ED2200B6BE83 /* ScreenMenuView.swift in Sources */,
+				FFB5737D29AA8CB7001061A5 /* BoardView.swift in Sources */,
 				FF9E821629A963F400F819E7 /* LevelsView.swift in Sources */,
 				FFB5737529AA6E25001061A5 /* Direction.swift in Sources */,
 			);

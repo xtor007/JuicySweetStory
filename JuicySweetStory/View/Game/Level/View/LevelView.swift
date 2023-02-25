@@ -14,7 +14,8 @@ struct LevelView: View {
     @StateObject var levelViewModel: LevelViewModel
 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        BoardView()
+            .environmentObject(levelViewModel)
     }
 }
 

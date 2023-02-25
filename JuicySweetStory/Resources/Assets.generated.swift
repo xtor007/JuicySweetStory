@@ -37,6 +37,7 @@ internal enum Asset {
   internal enum Images {
     internal static let checkboxOffIcon = ImageAsset(name: "checkboxOffIcon")
     internal static let checkboxOnIcon = ImageAsset(name: "checkboxOnIcon")
+    internal static let bigCandyFrame = ImageAsset(name: "bigCandyFrame")
     internal static let smallCandyFrame = ImageAsset(name: "smallCandyFrame")
     internal static let level100 = ImageAsset(name: "level100")
     internal static let level101 = ImageAsset(name: "level101")
