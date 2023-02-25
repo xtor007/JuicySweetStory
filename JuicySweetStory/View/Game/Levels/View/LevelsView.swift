@@ -17,7 +17,7 @@ struct LevelsView: View {
 
     var body: some View {
         ScrollView(showsIndicators: false) {
-            LazyVGrid(columns: columns, spacing: 16) {
+            LazyVGrid(columns: columns, spacing: 8) {
                 ForEach(0..<gameViewModel.levelsStorage.levelCount, id: \.self) { levelIndex in
                     if let level = gameViewModel.levelsStorage.getLevel(levelIndex + 1) {
                         LevelsViewItem(
@@ -26,7 +26,7 @@ struct LevelsView: View {
                         )
                         .onTapGesture {
                             if gameViewModel.isLevelOpen[levelIndex] {
-                                print(1)
+                                gameViewModel.openLevel(levelIndex: levelIndex)
                             }
                         }
                     }
@@ -40,6 +40,9 @@ struct LevelsView: View {
             Asset.Images.backgroundIcon.swiftUIImage
                 .resizable()
                 .ignoresSafeArea()
+        }
+        .navigationDestination(isPresented: $gameViewModel.willOpenGame) {
+            ContentView()
         }
     }
 
