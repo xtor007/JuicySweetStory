@@ -1,13 +1,13 @@
 //
-//  BackButton.swift
+//  RefreshButton.swift
 //  JuicySweetStory
 //
-//  Created by Anatoliy Khramchenko on 24.02.2023.
+//  Created by Anatoliy Khramchenko on 25.02.2023.
 //
 
 import SwiftUI
 
-struct BackButton: View {
+struct RefreshButton: View {
     let action: () -> Void
     var body: some View {
         Button(action: action) {
@@ -23,7 +23,7 @@ struct BackButton: View {
                                 Gradients.accentGradient
                             )
                     }
-                Asset.Images.backButtonIcon.swiftUIImage
+                Asset.Images.refreshButtonIcon.swiftUIImage
                     .resizable()
                     .scaledToFit()
                     .padding(8)
@@ -33,8 +33,8 @@ struct BackButton: View {
     }
 }
 
-struct BackButton_Previews: PreviewProvider {
+struct RefreshButton_Previews: PreviewProvider {
     static var previews: some View {
-        BackButton {}
+        RefreshButton {}
     }
 }

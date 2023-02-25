@@ -13,7 +13,7 @@ class GameViewModel: ObservableObject {
 
     @Published var isLevelOpen: [Bool]
 
-    @Published private(set) var currentLevel: Level? {
+    @Published var currentLevel: Level? {
         didSet {
             if currentLevel != nil {
                 willOpenGame = true

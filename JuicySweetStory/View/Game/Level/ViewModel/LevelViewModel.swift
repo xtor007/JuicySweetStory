@@ -13,6 +13,7 @@ class LevelViewModel: ObservableObject {
     static let rowsCount = 4
 
     @Published var maxTime: Int
+    @Published var currentTime = 0
     @Published var puzzles: [[Puzzle]]
 
     @Published var isWin = false
@@ -65,6 +66,11 @@ class LevelViewModel: ObservableObject {
         puzzles[newCoordinate.coordinateX][newCoordinate.coordinateY] = draggenPuzzle
         puzzles[puzzle.currentPosition.coordinateX][puzzle.currentPosition.coordinateY] = displacedPuzzle
         checkWin()
+    }
+
+    func refresh() {
+        puzzles = LevelViewModel.createPuzzles(level: level)
+        currentTime = 0
     }
 
     private func checkWin() {

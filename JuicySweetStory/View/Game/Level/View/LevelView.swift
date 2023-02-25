@@ -15,6 +15,8 @@ struct LevelView: View {
 
     var body: some View {
         VStack {
+            LevelNavigationBar()
+                .environmentObject(levelViewModel)
             Spacer()
             BoardView()
                 .frame(width: 357, height: 350)
@@ -33,6 +35,7 @@ struct LevelView: View {
             .frame(height: 226)
             Spacer()
         }
+        .padding(16)
         .background {
             Asset.Images.backgroundIcon.swiftUIImage
                 .resizable()

@@ -37,6 +37,9 @@
 		FFB5737829AA7D0D001061A5 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5737729AA7D0D001061A5 /* GameView.swift */; };
 		FFB5737B29AA7DA2001061A5 /* LevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5737A29AA7DA2001061A5 /* LevelView.swift */; };
 		FFB5737D29AA8CB7001061A5 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5737C29AA8CB7001061A5 /* BoardView.swift */; };
+		FFB5737F29AAB8BF001061A5 /* LevelNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5737E29AAB8BF001061A5 /* LevelNavigationBar.swift */; };
+		FFB5738229AABA27001061A5 /* RefreshButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5738129AABA27001061A5 /* RefreshButton.swift */; };
+		FFB5738429AABB8E001061A5 /* StrokeTextWithBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5738329AABB8E001061A5 /* StrokeTextWithBackground.swift */; };
 		FFB8F57A29A91A53002DDC78 /* View+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB8F57929A91A53002DDC78 /* View+NavigationBar.swift */; };
 		FFB8F57D29A92099002DDC78 /* StrokeTextLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB8F57C29A92099002DDC78 /* StrokeTextLabel.swift */; };
 		FFB8F58029A921C8002DDC78 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB8F57F29A921C8002DDC78 /* BackButton.swift */; };
@@ -76,6 +79,9 @@
 		FFB5737729AA7D0D001061A5 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		FFB5737A29AA7DA2001061A5 /* LevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelView.swift; sourceTree = "<group>"; };
 		FFB5737C29AA8CB7001061A5 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		FFB5737E29AAB8BF001061A5 /* LevelNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelNavigationBar.swift; sourceTree = "<group>"; };
+		FFB5738129AABA27001061A5 /* RefreshButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshButton.swift; sourceTree = "<group>"; };
+		FFB5738329AABB8E001061A5 /* StrokeTextWithBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeTextWithBackground.swift; sourceTree = "<group>"; };
 		FFB8F57929A91A53002DDC78 /* View+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+NavigationBar.swift"; sourceTree = "<group>"; };
 		FFB8F57C29A92099002DDC78 /* StrokeTextLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeTextLabel.swift; sourceTree = "<group>"; };
 		FFB8F57F29A921C8002DDC78 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
@@ -205,6 +211,7 @@
 		FFA6345E29A8DDDE009109D9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FFB5738029AABA0E001061A5 /* RefreshButton */,
 				FF9E821229A963D400F819E7 /* Game */,
 				FFB8F58129A92525002DDC78 /* Settings */,
 				FFB8F57E29A921B4002DDC78 /* BackButton */,
@@ -330,8 +337,17 @@
 			children = (
 				FFB5737A29AA7DA2001061A5 /* LevelView.swift */,
 				FFB5737C29AA8CB7001061A5 /* BoardView.swift */,
+				FFB5737E29AAB8BF001061A5 /* LevelNavigationBar.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FFB5738029AABA0E001061A5 /* RefreshButton */ = {
+			isa = PBXGroup;
+			children = (
+				FFB5738129AABA27001061A5 /* RefreshButton.swift */,
+			);
+			path = RefreshButton;
 			sourceTree = "<group>";
 		};
 		FFB8F57829A91A29002DDC78 /* Extensions */ = {
@@ -347,6 +363,7 @@
 			isa = PBXGroup;
 			children = (
 				FFB8F57C29A92099002DDC78 /* StrokeTextLabel.swift */,
+				FFB5738329AABB8E001061A5 /* StrokeTextWithBackground.swift */,
 			);
 			path = StrokeTextLabel;
 			sourceTree = "<group>";
@@ -501,6 +518,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFB8F58429A9253C002DDC78 /* SettingsView.swift in Sources */,
+				FFB5737F29AAB8BF001061A5 /* LevelNavigationBar.swift in Sources */,
 				FFA6345329A8DD94009109D9 /* ContentView.swift in Sources */,
 				FF61624729A8F4B300CA4589 /* Gradients.swift in Sources */,
 				FFB8F57A29A91A53002DDC78 /* View+NavigationBar.swift in Sources */,
@@ -524,6 +542,8 @@
 				FF9E820F29A955A000F819E7 /* LevelsStorage.swift in Sources */,
 				FFB0A73029A8EF9200B6BE83 /* ScreenMenuElementView.swift in Sources */,
 				FF61624A29A8FDB400CA4589 /* MainViewMenuElement.swift in Sources */,
+				FFB5738229AABA27001061A5 /* RefreshButton.swift in Sources */,
+				FFB5738429AABB8E001061A5 /* StrokeTextWithBackground.swift in Sources */,
 				FFB0A72229A8E51700B6BE83 /* Fonts.generated.swift in Sources */,
 				FFB8F58029A921C8002DDC78 /* BackButton.swift in Sources */,
 				FFB0A72E29A8ED2200B6BE83 /* ScreenMenuView.swift in Sources */,
