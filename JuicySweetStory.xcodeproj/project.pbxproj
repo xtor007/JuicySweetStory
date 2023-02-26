@@ -38,12 +38,13 @@
 		FFB5737B29AA7DA2001061A5 /* LevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5737A29AA7DA2001061A5 /* LevelView.swift */; };
 		FFB5737D29AA8CB7001061A5 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5737C29AA8CB7001061A5 /* BoardView.swift */; };
 		FFB5737F29AAB8BF001061A5 /* LevelNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5737E29AAB8BF001061A5 /* LevelNavigationBar.swift */; };
-		FFB5738229AABA27001061A5 /* RefreshButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5738129AABA27001061A5 /* RefreshButton.swift */; };
 		FFB5738429AABB8E001061A5 /* StrokeTextWithBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5738329AABB8E001061A5 /* StrokeTextWithBackground.swift */; };
 		FFB5738629AABF05001061A5 /* Int+TimeDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5738529AABF05001061A5 /* Int+TimeDescription.swift */; };
+		FFB5738A29AAD42D001061A5 /* GameFinishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5738929AAD42D001061A5 /* GameFinishView.swift */; };
+		FFB5738D29AAD44D001061A5 /* GameStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5738C29AAD44D001061A5 /* GameStatus.swift */; };
+		FFB5739429AAE332001061A5 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5739329AAE332001061A5 /* CustomButton.swift */; };
 		FFB8F57A29A91A53002DDC78 /* View+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB8F57929A91A53002DDC78 /* View+NavigationBar.swift */; };
 		FFB8F57D29A92099002DDC78 /* StrokeTextLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB8F57C29A92099002DDC78 /* StrokeTextLabel.swift */; };
-		FFB8F58029A921C8002DDC78 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB8F57F29A921C8002DDC78 /* BackButton.swift */; };
 		FFB8F58429A9253C002DDC78 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB8F58329A9253C002DDC78 /* SettingsView.swift */; };
 		FFB9378C29A932E40000E770 /* SettingsMenuElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9378B29A932E40000E770 /* SettingsMenuElement.swift */; };
 /* End PBXBuildFile section */
@@ -81,12 +82,13 @@
 		FFB5737A29AA7DA2001061A5 /* LevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelView.swift; sourceTree = "<group>"; };
 		FFB5737C29AA8CB7001061A5 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 		FFB5737E29AAB8BF001061A5 /* LevelNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelNavigationBar.swift; sourceTree = "<group>"; };
-		FFB5738129AABA27001061A5 /* RefreshButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshButton.swift; sourceTree = "<group>"; };
 		FFB5738329AABB8E001061A5 /* StrokeTextWithBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeTextWithBackground.swift; sourceTree = "<group>"; };
 		FFB5738529AABF05001061A5 /* Int+TimeDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+TimeDescription.swift"; sourceTree = "<group>"; };
+		FFB5738929AAD42D001061A5 /* GameFinishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFinishView.swift; sourceTree = "<group>"; };
+		FFB5738C29AAD44D001061A5 /* GameStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStatus.swift; sourceTree = "<group>"; };
+		FFB5739329AAE332001061A5 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		FFB8F57929A91A53002DDC78 /* View+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+NavigationBar.swift"; sourceTree = "<group>"; };
 		FFB8F57C29A92099002DDC78 /* StrokeTextLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeTextLabel.swift; sourceTree = "<group>"; };
-		FFB8F57F29A921C8002DDC78 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		FFB8F58329A9253C002DDC78 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		FFB9378B29A932E40000E770 /* SettingsMenuElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMenuElement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,6 +150,7 @@
 		FF9E821229A963D400F819E7 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				FFB5738729AAD416001061A5 /* GameFinish */,
 				FFB5737629AA7CFD001061A5 /* View */,
 				FFB5736D29AA64B9001061A5 /* Level */,
 				FF9E821929AA057B00F819E7 /* ViewModel */,
@@ -213,10 +216,9 @@
 		FFA6345E29A8DDDE009109D9 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FFB5738029AABA0E001061A5 /* RefreshButton */,
+				FFB5739229AAE31F001061A5 /* CustomButton */,
 				FF9E821229A963D400F819E7 /* Game */,
 				FFB8F58129A92525002DDC78 /* Settings */,
-				FFB8F57E29A921B4002DDC78 /* BackButton */,
 				FFB8F57B29A92085002DDC78 /* StrokeTextLabel */,
 				FFB0A72829A8EAF200B6BE83 /* ScreenMenu */,
 				FFB0A72429A8E6F300B6BE83 /* Main */,
@@ -344,12 +346,37 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		FFB5738029AABA0E001061A5 /* RefreshButton */ = {
+		FFB5738729AAD416001061A5 /* GameFinish */ = {
 			isa = PBXGroup;
 			children = (
-				FFB5738129AABA27001061A5 /* RefreshButton.swift */,
+				FFB5738B29AAD434001061A5 /* Model */,
+				FFB5738829AAD41D001061A5 /* View */,
 			);
-			path = RefreshButton;
+			path = GameFinish;
+			sourceTree = "<group>";
+		};
+		FFB5738829AAD41D001061A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFB5738929AAD42D001061A5 /* GameFinishView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FFB5738B29AAD434001061A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FFB5738C29AAD44D001061A5 /* GameStatus.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FFB5739229AAE31F001061A5 /* CustomButton */ = {
+			isa = PBXGroup;
+			children = (
+				FFB5739329AAE332001061A5 /* CustomButton.swift */,
+			);
+			path = CustomButton;
 			sourceTree = "<group>";
 		};
 		FFB8F57829A91A29002DDC78 /* Extensions */ = {
@@ -369,14 +396,6 @@
 				FFB5738329AABB8E001061A5 /* StrokeTextWithBackground.swift */,
 			);
 			path = StrokeTextLabel;
-			sourceTree = "<group>";
-		};
-		FFB8F57E29A921B4002DDC78 /* BackButton */ = {
-			isa = PBXGroup;
-			children = (
-				FFB8F57F29A921C8002DDC78 /* BackButton.swift */,
-			);
-			path = BackButton;
 			sourceTree = "<group>";
 		};
 		FFB8F58129A92525002DDC78 /* Settings */ = {
@@ -533,23 +552,24 @@
 				FF9E821829A9641800F819E7 /* LevelsViewItem.swift in Sources */,
 				FFB5738629AABF05001061A5 /* Int+TimeDescription.swift in Sources */,
 				FFB0A72329A8E51700B6BE83 /* Strings.generated.swift in Sources */,
+				FFB5738D29AAD44D001061A5 /* GameStatus.swift in Sources */,
 				FFB0A72129A8E51700B6BE83 /* Assets.generated.swift in Sources */,
 				FFB8F57D29A92099002DDC78 /* StrokeTextLabel.swift in Sources */,
 				FFB5737029AA64D6001061A5 /* LevelViewModel.swift in Sources */,
 				FF9E821B29AA059100F819E7 /* GameViewModel.swift in Sources */,
 				FF9E820729A9519700F819E7 /* LevelItem.swift in Sources */,
 				FF9E821129A9567800F819E7 /* Collection+Safe.swift in Sources */,
+				FFB5739429AAE332001061A5 /* CustomButton.swift in Sources */,
 				FF9E820D29A9543D00F819E7 /* LevelsStorageProtocol.swift in Sources */,
+				FFB5738A29AAD42D001061A5 /* GameFinishView.swift in Sources */,
 				FFB5737329AA6522001061A5 /* Puzzle.swift in Sources */,
 				FFB5737B29AA7DA2001061A5 /* LevelView.swift in Sources */,
 				FF9E820A29A951F300F819E7 /* Level.swift in Sources */,
 				FF9E820F29A955A000F819E7 /* LevelsStorage.swift in Sources */,
 				FFB0A73029A8EF9200B6BE83 /* ScreenMenuElementView.swift in Sources */,
 				FF61624A29A8FDB400CA4589 /* MainViewMenuElement.swift in Sources */,
-				FFB5738229AABA27001061A5 /* RefreshButton.swift in Sources */,
 				FFB5738429AABB8E001061A5 /* StrokeTextWithBackground.swift in Sources */,
 				FFB0A72229A8E51700B6BE83 /* Fonts.generated.swift in Sources */,
-				FFB8F58029A921C8002DDC78 /* BackButton.swift in Sources */,
 				FFB0A72E29A8ED2200B6BE83 /* ScreenMenuView.swift in Sources */,
 				FFB5737D29AA8CB7001061A5 /* BoardView.swift in Sources */,
 				FF9E821629A963F400F819E7 /* LevelsView.swift in Sources */,

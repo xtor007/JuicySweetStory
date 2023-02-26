@@ -14,32 +14,38 @@ struct LevelView: View {
     @StateObject var levelViewModel: LevelViewModel
 
     var body: some View {
-        VStack {
-            LevelNavigationBar()
-                .environmentObject(levelViewModel)
-            Spacer()
-            BoardView()
-                .frame(width: 357, height: 350)
-                .environmentObject(levelViewModel)
-            Spacer()
-            ZStack {
-                levelViewModel.level.resultImage
-                    .resizable()
-                    .scaledToFit()
-                    .clipShape(RoundedRectangle(cornerRadius: 35))
-                    .padding(8)
-                Asset.Images.bigCandyFrame.swiftUIImage
-                    .resizable()
-                    .scaledToFit()
+        ZStack {
+            VStack {
+                LevelNavigationBar()
+                    .environmentObject(levelViewModel)
+                Spacer()
+                BoardView()
+                    .frame(width: 357, height: 350)
+                    .environmentObject(levelViewModel)
+                Spacer()
+                ZStack {
+                    levelViewModel.level.resultImage
+                        .resizable()
+                        .scaledToFit()
+                        .clipShape(RoundedRectangle(cornerRadius: 35))
+                        .padding(8)
+                    Asset.Images.bigCandyFrame.swiftUIImage
+                        .resizable()
+                        .scaledToFit()
+                }
+                .frame(height: 226)
+                Spacer()
             }
-            .frame(height: 226)
-            Spacer()
-        }
-        .padding(16)
-        .background {
-            Asset.Images.backgroundIcon.swiftUIImage
-                .resizable()
-                .ignoresSafeArea()
+            .padding(16)
+            .background {
+                Asset.Images.backgroundIcon.swiftUIImage
+                    .resizable()
+                    .ignoresSafeArea()
+            }
+            if let gameStatus = levelViewModel.gameStatus {
+                GameFinishView(status: gameStatus)
+                    .environmentObject(levelViewModel)
+            }
         }
         .onAppear {
             levelViewModel.start()

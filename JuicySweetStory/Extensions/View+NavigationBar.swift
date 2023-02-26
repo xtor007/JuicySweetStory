@@ -23,7 +23,7 @@ struct CustomNavigationBar: ViewModifier {
                 )
                 .frame(height: 63)
                 HStack {
-                    BackButton {
+                    CustomButton(buttonIcon: Asset.Images.backButtonIcon.swiftUIImage) {
                         presentationMode.wrappedValue.dismiss()
                     }
                     .frame(width: 60)

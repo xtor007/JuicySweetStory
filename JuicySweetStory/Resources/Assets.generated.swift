@@ -29,6 +29,7 @@ internal enum Asset {
   }
   internal enum Colors {
     internal static let accentColor = ColorAsset(name: "accentColor")
+    internal static let blockColor = ColorAsset(name: "blockColor")
     internal static let darkAccentColor = ColorAsset(name: "darkAccentColor")
     internal static let foregroundColor = ColorAsset(name: "foregroundColor")
     internal static let lightAccentColor = ColorAsset(name: "lightAccentColor")
@@ -37,6 +38,8 @@ internal enum Asset {
   internal enum Images {
     internal static let checkboxOffIcon = ImageAsset(name: "checkboxOffIcon")
     internal static let checkboxOnIcon = ImageAsset(name: "checkboxOnIcon")
+    internal static let loseIcon = ImageAsset(name: "loseIcon")
+    internal static let winIcon = ImageAsset(name: "winIcon")
     internal static let bigCandyFrame = ImageAsset(name: "bigCandyFrame")
     internal static let smallCandyFrame = ImageAsset(name: "smallCandyFrame")
     internal static let level100 = ImageAsset(name: "level100")
@@ -102,7 +105,10 @@ internal enum Asset {
     internal static let backButtonIcon = ImageAsset(name: "backButtonIcon")
     internal static let backgroundIcon = ImageAsset(name: "backgroundIcon")
     internal static let blockCandyIcon = ImageAsset(name: "blockCandyIcon")
+    internal static let blockedNextButtonIcon = ImageAsset(name: "blockedNextButtonIcon")
     internal static let candyIcon = ImageAsset(name: "candyIcon")
+    internal static let homeButtonIcon = ImageAsset(name: "homeButtonIcon")
+    internal static let nextButtonIcon = ImageAsset(name: "nextButtonIcon")
     internal static let refreshButtonIcon = ImageAsset(name: "refreshButtonIcon")
   }
 }

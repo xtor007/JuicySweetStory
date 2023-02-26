@@ -29,7 +29,16 @@ class GameViewModel: ObservableObject {
     }
 
     func openLevel(levelIndex: Int) {
-        currentLevel = levelsStorage.getLevel(levelIndex + 1)
+        if levelIndex != 3 {
+            currentLevel = levelsStorage.getLevel(levelIndex + 1)
+        }
+    }
+
+    func openNextLevel() -> Level? {
+        if let currentLevel, currentLevel.number != 3 {
+            self.currentLevel = levelsStorage.getLevel(currentLevel.number + 1)
+        }
+        return self.currentLevel
     }
 
 }

@@ -19,3 +19,9 @@
 "levels.title" = "Levels";
 
 "level.level" = "LVL";
+
+"finish.win" = "Completed";
+"finish.lose" = "Failed";
+"finish.level" = "Level";
+"finish.time" = "Time";
+"finish.bestTime" = "Best time";

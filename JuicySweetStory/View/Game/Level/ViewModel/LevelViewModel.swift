@@ -16,10 +16,9 @@ class LevelViewModel: ObservableObject {
     @Published var currentTimeLeft: Int
     @Published var puzzles: [[Puzzle]]
 
-    @Published var isWin = false
-    @Published var isLose = false
+    @Published var gameStatus: GameStatus?
 
-    let level: Level
+    @Published var level: Level
 
     private let timeForFirstLevel = 180
     private let timeDelta = 10
@@ -56,11 +55,21 @@ class LevelViewModel: ObservableObject {
         return puzzeles
     }
 
+    func updateLevel(newLevel: Level) {
+        self.level = newLevel
+        let maxTime = timeForFirstLevel - (timeDelta * (newLevel.number - 1))
+        self.maxTime = maxTime
+        currentTimeLeft = maxTime
+        puzzles = LevelViewModel.createPuzzles(level: newLevel)
+        gameStatus = nil
+        start()
+    }
+
     func start() {
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
             self.currentTimeLeft -= 1
             if self.currentTimeLeft == 0 {
-                self.isLose = true
+                self.gameStatus = .lose
                 timer.invalidate()
             }
         }
@@ -102,8 +111,8 @@ class LevelViewModel: ObservableObject {
                 }
             }
         }
-        isWin = true
-        print("WIIIIIIIIN")
+        gameStatus = .win
+        timer?.invalidate()
     }
 
 }

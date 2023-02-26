@@ -10,6 +10,18 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum Strings {
+  internal enum Finish {
+    /// Best time
+    internal static let bestTime = Strings.tr("Localizable", "finish.bestTime", fallback: "Best time")
+    /// Level
+    internal static let level = Strings.tr("Localizable", "finish.level", fallback: "Level")
+    /// Failed
+    internal static let lose = Strings.tr("Localizable", "finish.lose", fallback: "Failed")
+    /// Time
+    internal static let time = Strings.tr("Localizable", "finish.time", fallback: "Time")
+    /// Completed
+    internal static let win = Strings.tr("Localizable", "finish.win", fallback: "Completed")
+  }
   internal enum Level {
     /// LVL
     internal static let level = Strings.tr("Localizable", "level.level", fallback: "LVL")
