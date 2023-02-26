@@ -45,6 +45,14 @@ struct GameFinishView: View {
                     )
                         .frame(maxWidth: .infinity, maxHeight: 60)
                 }
+                HStack {
+                    RefreshButton {
+                        levelViewModel.gameStatus = nil
+                        levelViewModel.refresh()
+                        levelViewModel.start()
+                    }
+                        .frame(width: 60)
+                }
                 Spacer()
             }
         }
