@@ -17,12 +17,31 @@ struct GameFinishView: View {
 
     var body: some View {
         ZStack {
-            Text("aboba")
+            VStack {
+                backgroundIcon()
+                    .resizable()
+                    .scaledToFit()
+                Spacer()
+            }
+            .padding(.top, 16)
+        }
+        .background {
+            Asset.Colors.shadowColor.swiftUIColor.opacity(0.8)
+                .ignoresSafeArea()
         }
         .onAppear {
             if status == .win {
                 gameViewModel.isLevelOpen[levelViewModel.level.number] = true
             }
+        }
+    }
+
+    func backgroundIcon() -> Image {
+        switch status {
+        case .win:
+            return Asset.Images.winIcon.swiftUIImage
+        case .lose:
+            return Asset.Images.loseIcon.swiftUIImage
         }
     }
 
