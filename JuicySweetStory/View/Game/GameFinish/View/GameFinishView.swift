@@ -24,13 +24,31 @@ struct GameFinishView: View {
                 Spacer()
             }
             .padding(.top, 16)
-            VStack {
+            VStack(spacing: 24) {
                 Spacer()
-                StrokeText(text: Strings.Finish.level, fontSize: 64, borderWidth: 60)
-                StrokeText(text: text.uppercased(), fontSize: 64, borderWidth: 60)
+                Spacer()
+                    StrokeText(text: Strings.Finish.level, fontSize: 64, borderWidth: 60)
+                        .frame(height: 70)
+                    StrokeText(text: text.uppercased(), fontSize: 64, borderWidth: 60)
+                        .frame(height: 70)
+                StrokeTextWithBackground(
+                    text: "\(Strings.Finish.time): \((levelViewModel.maxTime - levelViewModel.currentTimeLeft).timeDescription)",
+                    fontSize: 34,
+                    borderWidth: 18
+                )
+                    .frame(maxWidth: .infinity, maxHeight: 60)
+                if status == .win {
+                    StrokeTextWithBackground(
+                        text: "\(Strings.Finish.bestTime): \(62.timeDescription)",
+                        fontSize: 34,
+                        borderWidth: 18
+                    )
+                        .frame(maxWidth: .infinity, maxHeight: 60)
+                }
                 Spacer()
             }
         }
+        .padding(.horizontal, 16)
         .background {
             Asset.Colors.shadowColor.swiftUIColor.opacity(0.8)
                 .ignoresSafeArea()
