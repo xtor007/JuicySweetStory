@@ -18,12 +18,18 @@ struct GameFinishView: View {
     var body: some View {
         ZStack {
             VStack {
-                backgroundIcon()
+                backgroundIcon
                     .resizable()
                     .scaledToFit()
                 Spacer()
             }
             .padding(.top, 16)
+            VStack {
+                Spacer()
+                StrokeText(text: Strings.Finish.level, fontSize: 64, borderWidth: 60)
+                StrokeText(text: text.uppercased(), fontSize: 64, borderWidth: 60)
+                Spacer()
+            }
         }
         .background {
             Asset.Colors.shadowColor.swiftUIColor.opacity(0.8)
@@ -36,12 +42,21 @@ struct GameFinishView: View {
         }
     }
 
-    func backgroundIcon() -> Image {
+    var backgroundIcon: Image {
         switch status {
         case .win:
             return Asset.Images.winIcon.swiftUIImage
         case .lose:
             return Asset.Images.loseIcon.swiftUIImage
+        }
+    }
+
+    var text: String {
+        switch status {
+        case .win:
+            return Strings.Finish.win
+        case .lose:
+            return Strings.Finish.lose
         }
     }
 
