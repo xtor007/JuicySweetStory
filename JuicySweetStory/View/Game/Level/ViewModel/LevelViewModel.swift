@@ -18,7 +18,7 @@ class LevelViewModel: ObservableObject {
 
     @Published var gameStatus: GameStatus?
 
-    let level: Level
+    @Published var level: Level
 
     private let timeForFirstLevel = 180
     private let timeDelta = 10
@@ -53,6 +53,16 @@ class LevelViewModel: ObservableObject {
             puzzeles.append(puzzelesRow)
         }
         return puzzeles
+    }
+
+    func updateLevel(newLevel: Level) {
+        self.level = newLevel
+        let maxTime = timeForFirstLevel - (timeDelta * (newLevel.number - 1))
+        self.maxTime = maxTime
+        currentTimeLeft = maxTime
+        puzzles = LevelViewModel.createPuzzles(level: newLevel)
+        gameStatus = nil
+        start()
     }
 
     func start() {

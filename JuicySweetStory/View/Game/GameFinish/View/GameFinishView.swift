@@ -57,8 +57,11 @@ struct GameFinishView: View {
                     }
                         .frame(width: 60)
                     let nextAction: (() -> Void)? = status == .win ? {
-                        presentationMode.wrappedValue.dismiss()
-                        gameViewModel.openNextLevel()
+                        if let newLevel = gameViewModel.openNextLevel() {
+                            levelViewModel.updateLevel(newLevel: newLevel)
+                        } else {
+                            presentationMode.wrappedValue.dismiss()
+                        }
                     } : nil
                     CustomButton(
                         buttonIcon: status == .win
