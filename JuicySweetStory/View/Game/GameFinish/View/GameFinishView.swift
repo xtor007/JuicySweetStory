@@ -26,7 +26,6 @@ struct GameFinishView: View {
             .padding(.top, 16)
             VStack(spacing: 24) {
                 Spacer()
-                Spacer()
                     StrokeText(text: Strings.Finish.level, fontSize: 64, borderWidth: 60)
                         .frame(height: 70)
                     StrokeText(text: text.uppercased(), fontSize: 64, borderWidth: 60)
@@ -45,16 +44,32 @@ struct GameFinishView: View {
                     )
                         .frame(maxWidth: .infinity, maxHeight: 60)
                 }
-                HStack {
-                    RefreshButton {
+                HStack(spacing: 32) {
+                    CustomButton(buttonIcon: Asset.Images.homeButtonIcon.swiftUIImage) {
+                        presentationMode.wrappedValue.dismiss()
+                        gameViewModel.currentLevel = nil
+                    }
+                        .frame(width: 60)
+                    CustomButton(buttonIcon: Asset.Images.refreshButtonIcon.swiftUIImage) {
                         levelViewModel.gameStatus = nil
                         levelViewModel.refresh()
                         levelViewModel.start()
                     }
                         .frame(width: 60)
+                    let nextAction: (() -> Void)? = status == .win ? {
+                        presentationMode.wrappedValue.dismiss()
+                        gameViewModel.openNextLevel()
+                    } : nil
+                    CustomButton(
+                        buttonIcon: status == .win
+                        ? Asset.Images.nextButtonIcon.swiftUIImage
+                        : Asset.Images.blockedNextButtonIcon.swiftUIImage,
+                        action: nextAction
+                    )
+                        .frame(width: 60)
                 }
-                Spacer()
             }
+            .padding(.bottom, 60)
         }
         .padding(.horizontal, 16)
         .background {

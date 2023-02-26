@@ -15,13 +15,13 @@ struct LevelNavigationBar: View {
 
     var body: some View {
         HStack {
-            BackButton {
+            CustomButton(buttonIcon: Asset.Images.backButtonIcon.swiftUIImage) {
                 presentationMode.wrappedValue.dismiss()
                 levelViewModel.stop()
                 gameViewModel.currentLevel = nil
             }
             Spacer()
-            RefreshButton {
+            CustomButton(buttonIcon: Asset.Images.refreshButtonIcon.swiftUIImage) {
                 levelViewModel.refresh()
             }
             Spacer()
