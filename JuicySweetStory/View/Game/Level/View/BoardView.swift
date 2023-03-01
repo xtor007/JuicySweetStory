@@ -46,23 +46,28 @@ struct BoardView: View {
         ForEach(0..<levelViewModel.puzzles.count, id: \.self) { puzzlesIndex in
             ForEach(0..<levelViewModel.puzzles[puzzlesIndex].count, id: \.self) { puzzleIndex in
                 let puzzle = levelViewModel.puzzles[puzzlesIndex][puzzleIndex]
-                puzzle.puzzleImage
-                    .resizable()
-                    .frame(width: elementWidth - 8, height: elementHeight - 8)
-                    .offset(
-                        x: 4 + CGFloat(puzzle.currentPosition.coordinateX) * elementWidth,
-                        y: 4 + CGFloat(puzzle.currentPosition.coordinateY) * elementHeight
-                    )
-                    .gesture(DragGesture(minimumDistance: 3.0, coordinateSpace: .local)
-                        .onEnded { value in
-                            levelViewModel.movePuzzle(
-                                puzzle,
-                                to: Direction.byDrag(translation: value.translation)
-                            )
-                        }
-                    )
+                puzzleView(puzzle, elementWidth: elementWidth, elementHeight: elementHeight)
             }
         }
+    }
+
+    @ViewBuilder
+    func puzzleView(_ puzzle: Puzzle, elementWidth: CGFloat, elementHeight: CGFloat) -> some View {
+        puzzle.puzzleImage
+            .resizable()
+            .frame(width: elementWidth - 8, height: elementHeight - 8)
+            .offset(
+                x: 4 + CGFloat(puzzle.currentPosition.coordinateX) * elementWidth,
+                y: 4 + CGFloat(puzzle.currentPosition.coordinateY) * elementHeight
+            )
+            .gesture(DragGesture(minimumDistance: 3.0, coordinateSpace: .local)
+                .onEnded { value in
+                    levelViewModel.movePuzzle(
+                        puzzle,
+                        to: Direction.byDrag(translation: value.translation)
+                    )
+                }
+            )
     }
 
 }
